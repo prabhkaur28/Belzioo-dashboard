@@ -47,6 +47,14 @@
   left: 0;
   overflow: hidden;
 }
+.cookie-regular {
+  font-family: "Cookie", cursive;
+  font-weight: 600;
+  font-style: normal;
+ font-size: 40px;
+ text-decoration: none;
+ color: rgb(209, 34, 34);
+}
 
 .main {
   width: calc(100% - 270px);
@@ -66,14 +74,14 @@
 }
 
 .topdiv {
-  min-height: 390px;
-  max-height: 390px;
-  height: 390px;
+  min-height: 400px;
+  max-height: 400px;
+  height: 400px;
 }
 
 input {
   height: 45px;
-  width: 683px;
+  width: 400px;
   outline-style: none;
 }
 
@@ -95,26 +103,21 @@ header .profile::before {
   font-weight: 500;
   margin-right: 20px;
 }
-
 header img {
   height: 45px;
 }
-
 header .text {
   text-decoration: none;
 }
-
 .top {
   top: 20px;
   color: white;
 }
-
 .start {
   left: 20px;
 }
-
 .height {
-  height: 320px;
+  height: 350px;
 }
 
 .dot {
@@ -124,6 +127,9 @@ header .text {
 
 .card:hover {
   border-color: black !important;
+}
+.card{
+  width: 22%;
 }
 
 .width {
@@ -216,4 +222,21 @@ nav {
 .style {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+.pink{
+  background-color: rgba(212, 108, 143, 0.714);
+}
+ .width{
+  width: 10px;
+ }
+ .input-width{
+  width: 250px;
+ }
+ .cart{
+  height: 60px;
+  width: 60px;
+ }
+.shoes{
+  height: 600px;
+  width: 500px;
 }
