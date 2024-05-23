@@ -28,13 +28,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Card(props) {
-    const products = props.data.categories[0].products;
+    const products = [...props.data.categories[0].products, ...props.data.categories[1].products, props.data.categories[2].products];
 
     return (
         <div className="d-flex flex-wrap">
             {products.map(item => (
                 <div key={item.id} className="card border m-3">
-                    <Link to="/Single-Item">
+                    <Link to="/single-Item" state={item}>
                         <img src={item.image} className="w-100 p-1 rounded height" alt={item.name} />
                     </Link>
                     <div className="w-100 p-1">
@@ -48,3 +48,5 @@ export default function Card(props) {
         </div>
     );
 }
+
+

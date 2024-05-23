@@ -9,6 +9,7 @@ import { LuFileKey } from "react-icons/lu";
 import { FaShoppingBag } from "react-icons/fa";
 import { FaRegEdit } from "react-icons/fa";
 
+
 const Account = () => {
   return (
     <div className=' container'>
@@ -34,11 +35,11 @@ const Account = () => {
               <h6>My Accounts</h6>
             </Link>
 
-            <Link to={""} className=' gap-2 d-flex align-item-center border-bottom text-decoration-none text-dark  '>
+            <Link to={"/order"} className=' gap-2 d-flex align-item-center  text-decoration-none text-dark  '>
               <FaShoppingBag className='fs-5' />
               <h6>My Orders</h6>
             </Link>
-            <Link to={""} className=' gap-2 d-flex align-item-center border-bottom text-decoration-none text-dark '>
+            {/* <Link to={""} className=' gap-2 d-flex align-item-center border-bottom text-decoration-none text-dark '>
               < FcCancel className='fs-5' />
               <h6>Returns & Cancel</h6>
             </Link>
@@ -53,7 +54,7 @@ const Account = () => {
             <Link to={""} className=' gap-2 d-flex align-item-center text-decoration-none text-dark  '>
               <LuFileKey className='fs-5' />
               <h6>Change Password</h6>
-            </Link>
+            </Link> */}
           </div>
         </div>
         <div className='col bg-light p-3 rounded '>
@@ -75,7 +76,7 @@ const Account = () => {
             <h6>Email</h6>
             <input type='' placeholder='Email' className='rounded' />
           </div>
-          <div className='pt-3'>
+          {/* <div className='pt-3'>
             <h6>Gender</h6>
             <div className=' d-flex gap-5'>
               <div className="form-check">
@@ -106,7 +107,7 @@ const Account = () => {
           <div className='pt-3'>
             <h6>Phone Number</h6>
             <input type='Contact' placeholder='+91  ' className='rounded' />
-          </div>
+          </div> */}
           <button className=' btn bg-danger border-0 p-2 fs-5 fw-semibold  d-flex justify-content-center mt-4 rounded text-light'>Save Changes</button>
         </div>
       </div>

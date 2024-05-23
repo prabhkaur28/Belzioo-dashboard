@@ -27,7 +27,7 @@ const Sidebar = () => {
         <div className="topdiv">
           <ul className="nav flex-column gap-4 pt-3">
             <li className="nav-item">
-              <Link to={"/Best-Offers"} className="icon text-dark  ms-4 fs-5 group gap-2 align-items-center d-flex">
+              <Link to={"/best-Offers"} className="icon text-dark  ms-4 fs-5 group gap-2 align-items-center d-flex">
                 <BiSolidOffer />
                 <span className="group  fs-6  text-dark">Best Offer</span>
               </Link>
@@ -58,7 +58,7 @@ const Sidebar = () => {
           <hr className="w-60 ms-4 me-3" />
           <ul className="nav">
             <li className="nav-item">
-              <Link to={"/Account"} className=" text-dark  ms-4 fs-5 group gap-2 align-items-center d-flex">
+              <Link to={"/account"} className=" text-dark  ms-4 fs-5 group gap-2 align-items-center d-flex">
                 <TbUserEdit />
                 <span className="group fs-6 text-dark">Account</span>
               </Link>

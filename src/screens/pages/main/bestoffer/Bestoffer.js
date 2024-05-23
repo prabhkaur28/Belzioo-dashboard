@@ -9,8 +9,7 @@ const Bestoffer = () => {
         <div className=''>
             <Discount />
             <Cards />
-
-        </div>
+            </div>
     )
 }
 export default Bestoffer;

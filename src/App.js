@@ -14,6 +14,7 @@ import SingleItem from './screens/pages/main/bestoffer/component/mancollection/c
 import Account from './screens/pages/main/account/Account';
 import Home from './screens/pages/main/home/Home';
 import CartBag from "./screens/pages/components/header/components/addtocart/CartBag"
+import Order from './screens/pages/main/account/components/orders/Order';
 
 const App = () => {
   return (
@@ -22,13 +23,14 @@ const App = () => {
         <Route path="/" element={<MainRoute />}>
           <Route path="/" element={<Home />} />
           <Route path="/track-order" element={<Trackorder />} />
-          <Route path="/Best-Offers" element={<Bestoffer />} />
-          <Route path="/Kid-Collection" element={<KidCollection />} />
-          <Route path="/Woman-Collection" element={<WomenCollection />} />
-          <Route path="/Man-Collection" element={<ManCollection />} />
-          <Route path="/Single-Item" element={<SingleItem />} />
-          <Route path="/Account" element={<Account />} /> 
-          <Route path="/Cart-bag" element={<CartBag />} />
+          <Route path="/best-Offers" element={<Bestoffer />} />
+          <Route path="/kid-Collection" element={<KidCollection />} />
+          <Route path="/woman-Collection" element={<WomenCollection />} />
+          <Route path="/man-Collection" element={<ManCollection />} />
+          <Route path="/single-Item" element={<SingleItem />} />
+          <Route path="/account" element={<Account />} /> 
+          <Route path="/cart-bag" element={<CartBag />} />
+          <Route path="/order" element={<Order />} />
         
         </Route>
 

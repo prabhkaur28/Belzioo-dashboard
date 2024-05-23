@@ -21,17 +21,17 @@ const Header = () => {
     return (
         <header className="py-4 d-flex gap-4 justify-content-between align-items-center">
             <div className="menu d-flex gap-4 bg-light">
-                <div className="dropdown">
+                {/* <div className="dropdown">
                     <button className="btn btn-light m-2 dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
                         All Categories
                     </button>
-                    <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <ul className="dropdown-menu zIndex" aria-labelledby="dropdownMenuButton">
                         <li><Link className="dropdown-item" to="/">Man-Collection</Link></li>
-                        <li><Link className="dropdown-item" to="/">Women-Collection</Link></li>
+                        <li><Link className="dropdown-item" to="/home">Women-Collection</Link></li>
                         <li><Link className="dropdown-item" to="/">Kid-Collection</Link></li>
                     </ul>
-                </div>
-                <input className="from-control bg-light border-0" type="search" placeholder="Search" />
+                </div> */}
+                <input className="from-control bg-light border-0 p-2" type="search" placeholder="Search" />
                 <id className=" fs-5 me-3 pt-2 "><CiSearch /></id>
             </div>
             <div className="d-flex gap-4 align-items-center">

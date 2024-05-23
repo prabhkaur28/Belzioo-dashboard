@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import img2 from "../../../../../../assets/Images/img2.png";
 // import kidshoes1 from "../../../../../assets/Images/kidshoes1.png";
 import kidshoes2 from "../../../../../../assets/Images/kidshoes1.png";
@@ -11,35 +11,37 @@ import kidshoes8 from "../../../../../../assets/Images/kidshoes8.png"
 import kidshoes9 from "../../../../../../assets/Images/kidshoes9.png"
 import kidshoes10 from "../../../../../../assets/Images/kidshoes10.png"
 import { Link } from 'react-router-dom';
-
+import data from "../../../../../../data/shoes"
 
 
 
 const KidCollection = () => {
+    console.log("abdb")
     return (
         <div className='container'>
             <h1 className=' d-flex justify-content-center p-3 text-dark fw-bold'>KID COLLECTION</h1>
             <div className='row d-flex justify-content-between pt-4'>
-                <div className='col'>
+
+                {data.categories[2].products.map((item)=>(<div className='col-sm-3'>
                     <div className=" p-3">
-                        <Link to={"/Single-Item"} className=' text-decoration-none  text-dark'>
-                            <img src={kidshoes8} alt="" />
+                        <Link to={"/single-Item"} state={item} className=' text-decoration-none  text-dark'>
+                            <img src={item.image} alt="" className='w-100 h-100' />
                             <div className="text d-flex flex-column">
-                                <h6 className="pt-3 fw-bold">kazar Max</h6>
-                                <h6 className='fw-normal'>Unisex Kids Comfort  Sandals</h6>
+                                <h6 className="pt-3 fw-bold">{item.name}</h6>
+                                <h6 className='fw-normal'>{item.offer_description}</h6>
                                 <div className=' d-flex gap-3'>
-                                    <span className='fw-normal'>Rs.419</span>
-                                    <span className=' text-decoration-line-through'> Rs.1999</span>
+                                    <span className='fw-normal'>Rs.{item.offer_price}</span>
+                                    <span className=' text-decoration-line-through'> Rs.{item.price}</span>
                                     <span className=' text-danger fw-normal'>(56% OFF)</span>
                                 </div>
                             </div>
                         </Link>
                     </div>
-                </div>
+                </div>))}
 
-                <div className='col'>
+                {/* <div className='col'>
                     <div className=" p-3">
-                        <Link to={"/Single-Item"} className=' text-decoration-none  text-dark'>
+                        <Link to={"/single-Item"} className=' text-decoration-none  text-dark'>
                             <img src={img2} alt="img2" />
                             <div className="text d-flex flex-column">
                                 <h6 className="pt-3 fw-bold">BASED</h6>
@@ -57,7 +59,7 @@ const KidCollection = () => {
 
                 <div className='col'>
                     <div className=" p-3">
-                        <Link to={"/Single-Item"} className=' text-decoration-none  text-dark'>
+                        <Link to={"/single-Item"} className=' text-decoration-none  text-dark'>
                             <img src={kidshoes10} alt=" " />
                             <div className="text d-flex flex-column">
                                 <h6 className="pt-3 fw-bold">BASED</h6>
@@ -74,7 +76,7 @@ const KidCollection = () => {
 
                 <div className='col'>
                     <div className=" p-3">
-                        <Link to={"/Single-Item"} className=' text-decoration-none  text-dark'>
+                        <Link to={"/single-Item"} className=' text-decoration-none  text-dark'>
                             <img src={kidshoes7} alt=" " />
                             <div className="text d-flex flex-column">
                                 <h6 className="pt-3 fw-bold">Puma</h6>
@@ -87,12 +89,12 @@ const KidCollection = () => {
                             </div>
                         </Link>
                     </div>
-                </div>
+                </div> */}
             </div>
-            <div className='row d-flex justify-content-between  pt-4'>
+            {/* <div className='row d-flex justify-content-between  pt-4'>
                 <div className='col'>
                     <div className=" p-3">
-                        <Link to={"/Single-Item"} className=' text-decoration-none  text-dark'>
+                        <Link to={"/single-Item"} className=' text-decoration-none  text-dark'>
                             <img src={kidshoes2} alt=" " />
                             <div className="text d-flex flex-column">
                                 <h6 className="pt-3 fw-bold">Red Tape</h6>
@@ -110,7 +112,7 @@ const KidCollection = () => {
 
                 <div className='col'>
                     <div className=" p-3">
-                        <Link to={"/Single-Item"} className=' text-decoration-none  text-dark'>
+                        <Link to={"/single-Item"} className=' text-decoration-none  text-dark'>
                             <img src={kidshoes3} alt=" " />
                             <div className="text d-flex flex-column">
                                 <h6 className="pt-3 fw-bold">Red Tape</h6>
@@ -126,7 +128,7 @@ const KidCollection = () => {
                 </div>
                 <div className='col'>
                     <div className=" p-3">
-                        <Link to={"/Single-Item"} className=' text-decoration-none  text-dark'>
+                        <Link to={"/single-Item"} className=' text-decoration-none  text-dark'>
                             <img src={kidshoes9} alt=" " />
                             <div className="text d-flex flex-column">
                                 <h6 className="pt-3 fw-bold">BASED</h6>
@@ -144,7 +146,7 @@ const KidCollection = () => {
 
                 <div className='col'>
                     <div className=" p-3">
-                        <Link to={"/Single-Item"} className=' text-decoration-none  text-dark'>
+                        <Link to={"/single-Item"} className=' text-decoration-none  text-dark'>
                             <img src={kidshoes4} alt=" " />
                             <div className="text d-flex flex-column">
                                 <h6 className="pt-3 fw-bold">HRX by Hrithik Roshan</h6>
@@ -162,7 +164,7 @@ const KidCollection = () => {
             <div className='row d-flex justify-content-between border pt-4'>
                 <div className='col'>
                     <div className=" p-3">
-                        <Link to={"/Single-Item"} className=' text-decoration-none  text-dark'>
+                        <Link to={"/single-Item"} className=' text-decoration-none  text-dark'>
                             <img src={kidshoes5} alt="" />
                             <div className="text d-flex flex-column">
                                 <h6 className="pt-3 fw-bold">Red Tape</h6>
@@ -178,7 +180,7 @@ const KidCollection = () => {
                 </div>
                 <div className='col'>
                     <div className=" p-3">
-                        <Link to={"/Single-Item"} className=' text-decoration-none  text-dark'>
+                        <Link to={"/single-Item"} className=' text-decoration-none  text-dark'>
                             <img src={kidshoes6} alt="" />
                             <div className="text d-flex flex-column">
                                 <h6 className="pt-3 fw-bold"> HRX by Hrithik Roshan</h6>
@@ -194,7 +196,7 @@ const KidCollection = () => {
                 </div>
                 <div className='col'>
                     <div className=" p-3">
-                        <Link to={"/Single-Item"} className=' text-decoration-none  text-dark'>
+                        <Link to={"/single-Item"} className=' text-decoration-none  text-dark'>
                             <img src={kidshoes7} alt=" " />
                             <div className="text d-flex flex-column">
                                 <h6 className="pt-3 fw-semibold">Red Tape</h6>
@@ -210,7 +212,7 @@ const KidCollection = () => {
                 </div>
                 <div className='col'>
                     <div className=" p-3">
-                        <Link to={"/Single-Item"} className=' text-decoration-none  text-dark'>
+                        <Link to={"/single-Item"} className=' text-decoration-none  text-dark'>
                             <img src={kidshoes8} alt=" " />
                             <div className="text d-flex flex-column">
                                 <h6 className="pt-3 fw-semibold">Red Tape</h6>
@@ -224,7 +226,7 @@ const KidCollection = () => {
                         </Link>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
 
     )

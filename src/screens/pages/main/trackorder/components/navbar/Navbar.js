@@ -10,8 +10,8 @@ const Navbar = () => {
           <Link to={""} className="text-decoration-none  text-dark blue">WOMEN</Link>
           <Link to={""} className="text-decoration-none  text-dark blue">KID</Link>
           <Link to={""} className="text-decoration-none text-dark blue">NEW ARRIVALS</Link>
-          <Link to={"/"} className="text-decoration-none text-dark blue">TOP BRANDS</Link>
-          <Link to={"/"} className="text-decoration-none text-dark blue">PERSONAL CARE</Link>
+          <Link to={""} className="text-decoration-none text-dark blue">TOP BRANDS</Link>
+          <Link to={""} className="text-decoration-none text-dark blue">PERSONAL CARE</Link>
         </div>
         <div className='button d-flex gap-5'>
           <Link to={""}><button className='border-0 py-1 px-2 pink text-light'> PRODUCTS</button></Link>

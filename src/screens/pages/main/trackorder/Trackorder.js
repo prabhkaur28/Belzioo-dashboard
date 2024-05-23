@@ -10,7 +10,6 @@ import Placeorder from "./components/placeorder/placeorder";
 function Trackorder() {
     return (
         <div className="">
-            <Navbar />
             <Placeorder />
         </div>
     )

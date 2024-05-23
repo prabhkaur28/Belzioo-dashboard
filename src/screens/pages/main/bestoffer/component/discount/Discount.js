@@ -15,13 +15,13 @@ const Discount = () => {
   ];
   return (
     <div className='container bg-light py-3'>
-      <div className='menu d-flex gap-4 justify-content-center pb-3'>
+      {/* <div className='menu d-flex gap-4 justify-content-center pb-3'>
         {menuItems.map((menuItem, index) => (
           <Link key={index} to={menuItem.link} className='text-decoration-none text-dark'>
             {menuItem.text}
           </Link>
         ))}
-      </div>
+      </div> */}
     
       <div className='row'>
         <img src={salebanner} alt='salebanner' />

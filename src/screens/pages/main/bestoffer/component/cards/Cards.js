@@ -10,7 +10,7 @@ const Cards = () => {
             <h2 className='d-flex justify-content-center p-3'>FEATURED COLLECTION</h2>
             <div className='cards d-flex gap-4 p-2'>
                 <div className='col'>
-                    <Link to={"/Kid-Collection"} className='text-decoration-none '>
+                    <Link to={"/kid-Collection"} className='text-decoration-none '>
                         <img src={kid} className='w-100' alt='' />
                         <div className=' d-flex justify-content-center p-3 text-dark fw-semibold'>
                             <h5>KID COLLECTION</h5>
@@ -18,7 +18,7 @@ const Cards = () => {
                     </Link>
                 </div>
                 <div className='col'>
-                    <Link to={"/Woman-Collection"} className='text-decoration-none '>
+                    <Link to={"/woman-Collection"} className='text-decoration-none '>
                         <img src={women} className='w-100 ' alt='' />
                         <div className=' d-flex justify-content-center p-3 text-dark fw-semibold'>
                             <h5>WOMEN COLLECTION</h5>
@@ -26,7 +26,7 @@ const Cards = () => {
                     </Link>
                 </div>
                 <div className='col'>
-                    <Link to={"/Man-Collection"} className='text-decoration-none '>
+                    <Link to={"/man-Collection"} className='text-decoration-none '>
                         <img src={man} className='w-100' alt='' />
                         <div className=' d-flex justify-content-center p-3 text-dark fw-semibold'>
                             <h5>MAN COLLECTION</h5>

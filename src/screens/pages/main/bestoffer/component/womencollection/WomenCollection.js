@@ -13,15 +13,35 @@ import womenshoes1 from "../../../../../../assets/Images/womenshoes1.png";
 import womenshoes2 from "../../../../../../assets/Images/womenshoes2.png";
 
 import { Link } from 'react-router-dom';
+import data from '../../../../../../data/shoes';
 
 const WomenCollection = () => {
     return (
         <div className='container'>
-            <h1 className=' d-flex justify-content-center p-3 text-dark fw-bold'>WOMEN COLLECTION</h1>
-            <div className='row d-flex justify-content-between pt-4'>
+        <h1 className=' d-flex justify-content-center p-3 text-dark fw-bold'>KID COLLECTION</h1>
+        <div className='row d-flex justify-content-between pt-4'>
+
+            {data.categories[1].products.map((item)=>(<div className='col-sm-3'>
+                <div className=" p-3">
+                    <Link to={"/single-Item"} state={item} className=' text-decoration-none  text-dark'>
+                        <img src={item.image} alt="" className='w-100 h-100' />
+                        <div className="text d-flex flex-column">
+                            <h6 className="pt-3 fw-bold">{item.name}</h6>
+                            <h6 className='fw-normal'>{item.offer_description}</h6>
+                            <div className=' d-flex gap-3'>
+                                <span className='fw-normal'>Rs.{item.offer_price}</span>
+                                <span className=' text-decoration-line-through'> Rs.{item.price}</span>
+                                <span className=' text-danger fw-normal'>(56% OFF)</span>
+                            </div>
+                        </div>
+                    </Link>
+                </div>
+            </div>))}
+
+            {/* <div className='row d-flex justify-content-between pt-4'>
                 <div className='col'>
                     <div className=" p-3">
-                        <Link to={"/Single-Item"} className=' text-decoration-none  text-dark'>
+                        <Link to={"/single-Item"} className=' text-decoration-none  text-dark'>
                             <img src={womenimg1} alt="" />
                             <div className="text d-flex flex-column">
                                 <h6 className="pt-3 fw-bold">Red Tape</h6>
@@ -37,7 +57,7 @@ const WomenCollection = () => {
                 </div>
                 <div className='col'>
                     <div className=" p-3">
-                        <Link to={"/Single-Item"} className=' text-decoration-none  text-dark'>
+                        <Link to={"/single-Item"} className=' text-decoration-none  text-dark'>
                             <img src={wimg2} alt="wimg2" />
                             <div className="text d-flex flex-column">
                                 <h6 className="pt-3 fw-bold">AXIUM</h6>
@@ -53,7 +73,7 @@ const WomenCollection = () => {
                 </div>
                 <div className='col'>
                     <div className=" p-3">
-                        <Link to={"/Single-Item"} className=' text-decoration-none  text-dark'>
+                        <Link to={"/single-Item"} className=' text-decoration-none  text-dark'>
                             <img src={womenshoes1} alt="" />
                             <div className="text d-flex flex-column">
                                 <h6 className="pt-3 fw-bold">AXIUM</h6>
@@ -71,8 +91,8 @@ const WomenCollection = () => {
                     <div className=" p-3">
                         {/* <div className='position-reletive'>
                             <div className='position-absolute bg-dark p-2 top start'>50%</div>
-                        </div> */}
-                        <Link to={"/Single-Item"} className=' text-decoration-none  text-dark'>
+                        </div>
+                        <Link to={"/single-Item"} className=' text-decoration-none  text-dark'>
                             <img src={manfootwear3} alt=" manfootwear3" />
                             <div className="text d-flex flex-column">
                                 <h6 className="pt-3 fw-bold">Puma</h6>
@@ -90,7 +110,7 @@ const WomenCollection = () => {
             <div className='row d-flex justify-content-between pt-4'>
                 <div className='col'>
                     <div className=" p-3">
-                        <Link to={"/Single-Item"} className=' text-decoration-none  text-dark'>
+                        <Link to={"/single-Item"} className=' text-decoration-none  text-dark'>
                             <img src={img3w3} alt=" " />
                             <div className="text d-flex flex-column">
                                 <h6 className="pt-3 fw-bold">Puma</h6>
@@ -106,7 +126,7 @@ const WomenCollection = () => {
                 </div>
                 <div className='col'>
                     <div className=" p-3">
-                        <Link to={"/Single-Item"} className=' text-decoration-none  text-dark'>
+                        <Link to={"/single-Item"} className=' text-decoration-none  text-dark'>
                             <img src={imgwomen4} alt=" " />
                             <div className="text d-flex flex-column">
                                 <h6 className="pt-3 fw-bold">Rodster</h6>
@@ -122,7 +142,7 @@ const WomenCollection = () => {
                 </div>
                 <div className='col'>
                     <div className=" p-3">
-                        <Link to={"/Single-Item"} className=' text-decoration-none  text-dark'>
+                        <Link to={"/single-Item"} className=' text-decoration-none  text-dark'>
                             <img src={womenshoes3} alt="" />
                             <div className="text d-flex flex-column">
                                 <h6 className="pt-3 fw-bold">AXIUM</h6>
@@ -139,7 +159,7 @@ const WomenCollection = () => {
 
                 <div className='col'>
                     <div className=" p-3">
-                        <Link to={"/Single-Item"} className=' text-decoration-none  text-dark'>
+                        <Link to={"/single-Item"} className=' text-decoration-none  text-dark'>
                             <img src={shoes6} alt="" />
                             <div className="text d-flex flex-column">
                                 <h6 className="pt-3 fw-bold">Red Tape</h6>
@@ -158,7 +178,7 @@ const WomenCollection = () => {
             <div className='row d-flex justify-content-between  pt-4'>
                 <div className='col'>
                     <div className=" p-3">
-                        <Link to={"/Single-Item"} className=' text-decoration-none  text-dark'>
+                        <Link to={"/single-Item"} className=' text-decoration-none  text-dark'>
                             <img src={sliper7} alt="" />
                             <div className="text d-flex flex-column">
                                 <h6 className="pt-3 fw-bold">Puma</h6>
@@ -174,7 +194,7 @@ const WomenCollection = () => {
                 </div>
                 <div className='col'>
                     <div className=" p-3">
-                        <Link to={"/Single-Item"} className=' text-decoration-none  text-dark'>
+                        <Link to={"/single-Item"} className=' text-decoration-none  text-dark'>
                             <img src={img3w3} alt="" />
                             <div className="text d-flex flex-column">
                                 <h6 className="pt-3 fw-bold">Puma </h6>
@@ -190,7 +210,7 @@ const WomenCollection = () => {
                 </div>
                 <div className='col'>
                     <div className=" p-3">
-                        <Link to={"/Single-Item"} className=' text-decoration-none  text-dark'>
+                        <Link to={"/single-Item"} className=' text-decoration-none  text-dark'>
                             <img src={womenshoes2} alt=" " />
                             <div className="text d-flex flex-column">
                                 <h6 className="pt-3 fw-bold">AXIUM</h6>
@@ -207,7 +227,7 @@ const WomenCollection = () => {
 
                 <div className='col'>
                     <div className=" p-3">
-                        <Link to={"/Single-Item"} className=' text-decoration-none  text-dark'>
+                        <Link to={"/single-Item"} className=' text-decoration-none  text-dark'>
                             <img src={manfootwear3} alt=" " />
                             <div className="text d-flex flex-column">
                                 <h6 className="pt-3 fw-semibold">Red Tape</h6>
@@ -221,11 +241,11 @@ const WomenCollection = () => {
                         </Link>
                     </div>
                 </div>
-            </div>
-        </div>
-
-
-    )
-}
+            </div>  */}
+    </div>
+    </div>
+    
+                    )
+                }
 
 export default WomenCollection

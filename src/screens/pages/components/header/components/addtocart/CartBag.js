@@ -2,11 +2,11 @@ import React from 'react'
 // import { IoIosNotificationsOutline } from "react-icons/io";
 // import { CiHeart } from "react-icons/ci";
 import { FaComment } from "react-icons/fa";
-import { IoGrid } from "react-icons/io5";
-import { FaRegUser } from "react-icons/fa6";
-import { MdShoppingCart } from "react-icons/md";
-import { IoIosNotifications } from "react-icons/io";
-import { FaHeart } from "react-icons/fa";
+// import { IoGrid } from "react-icons/io5";
+// import { FaRegUser } from "react-icons/fa6";
+// import { MdShoppingCart } from "react-icons/md";
+// import { IoIosNotifications } from "react-icons/io";
+// import { FaHeart } from "react-icons/fa";
 import { FaRegCircle } from "react-icons/fa";
 import { FaCaretRight } from "react-icons/fa";
 import { FaCaretLeft } from "react-icons/fa";
@@ -199,7 +199,7 @@ const CartBag = () => {
               <h5 className='fw-semibold'>$388.89</h5>
             </div>
             <div className='d-flex justify-content-end pt-3 '>
-            <button className=' btn   bg-primary px-3 py-2 border-0 text-dark w-25 fw-semibold fs-5 '>Pay</button>
+            <button className=' btn   bg-primary px-3 py-2 border-0 text-light w-25 fw-semibold fs-5 '>Pay</button>
           </div>
           </div>
 

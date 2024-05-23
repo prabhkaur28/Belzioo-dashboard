@@ -2,33 +2,36 @@ import React from 'react'
 import { FaStar } from "react-icons/fa";
 import img123 from "../../../../../../../../assets/Images/img123.png";
 import { IoMdHeartEmpty } from "react-icons/io";
+import { useLocation } from 'react-router-dom';
 
 export default function SingleItem() {
+    const product = useLocation().state
+    console.log(product);
     return (
         <div className=' container'>
             <div className='row d-flex  '>
                 <div className='col'>
-                    <img src={img123} className=' w-100 rounded border' alt='img123' />
+                    <img src={product.image} className=' w-100 h-100 rounded border' alt='img123' />
                 </div>
                 <div className='col d-flex  flex-column gap-2'>
                     <div className='d-flex justify-content-between'>
-                        <h3>Red Tape</h3>
+                        <h3>{product.name}</h3>
                         <button className='border-0  rounded-pill p-2'> <IoMdHeartEmpty /> Add to Wishlist</button>
                     </div>
                     <>
-                        <h5>Red Tape Sneaker Casual Shoes for Men | Soft Cushion Insole, Slip-ResisTance , Dynamic Feet Support & Arch Support </h5>
+                        <h5>{product.offer_description}</h5>
                     </>
                     <div className='d-flex text-center align-items-center gap-2'>
-                        <h6 className='mb-0'>4.3 </h6>
+                        <h6 className='mb-0'>{product.rating} </h6>
                         <FaStar />
-                        |<h6 className='mb-0'> 3.7k Ratings</h6>
+                        |<h6 className='mb-0'> {product.reviews}k Ratings</h6>
                     </div>
 
                     <hr></hr>
                     <div className='d-flex gap-3'>
-                        <h4>Rs. 1119 </h4>
+                        <h4>Rs. {product.offer_price} </h4>
                         <span className='fw-nomal fs-5'>MRP</span>
-                        <h4 className='fw-lighter text-decoration-line-through'>Rs. 5599 </h4>
+                        <h4 className='fw-lighter text-decoration-line-through'>Rs. {product.price} </h4>
                         <h4 className='text-danger '>(80% OFF )</h4>
                     </div>
                     <div>

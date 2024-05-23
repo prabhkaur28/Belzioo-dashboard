@@ -116,6 +116,7 @@ const Data = {
           "reviews": 90,
           "offer": false
         },
+
         {
           "id": "010",
           "name": "Men's Slippers",
@@ -129,14 +130,42 @@ const Data = {
           "offer": true,
           "offer_price": 59.99,
           "offer_description": "Winter Sale"
-        }
+        },
+        {
+          "id": "011",
+          "name": "Men's Slippers",
+          "brand": "UGG",
+          "price": 69.99,
+          "color": "Gray",
+          "size": ["8", "9", "10", "11"],
+          "image": "https://images.unsplash.com/photo-1491553895911-0055eca6402d?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "rating": 4.4,
+          "reviews": 120,
+          "offer": true,
+          "offer_price": 59.99,
+          "offer_description": "Winter Sale"
+        },
+        {
+          "id": "012",
+          "name": "Men's Flip Flops",
+          "brand": "Havaianas",
+          "price": 29.99,
+          "color": "Black",
+          "size": ["8", "9", "10", "11"],
+          "image": "https://plus.unsplash.com/premium_photo-1665664652418-91f260a84842?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "rating": 4.5,
+          "reviews": 70,
+          "offer": false
+        },
+        
+        
       ]
     },
     {
       "category": "Women's",
       "products": [
         {
-          "id": "011",
+          "id": "013",
           "name": "Women's Running Shoes",
           "brand": "Nike",
           "price": 89.99,
@@ -148,7 +177,7 @@ const Data = {
           "offer": false
         },
         {
-          "id": "012",
+          "id": "014",
           "name": "Women's Casual Shoes",
           "brand": "Converse",
           "price": 59.99,
@@ -160,7 +189,7 @@ const Data = {
           "offer": false
         },
         {
-          "id": "013",
+          "id": "015",
           "name": "Women's High Heels",
           "brand": "Jimmy Choo",
           "price": 199.99,
@@ -174,7 +203,19 @@ const Data = {
           "offer_description": "Limited Time Offer"
         },
         {
-          "id": "014",
+          "id": "016",
+          "name": "Women's Running Shoes",
+          "brand": "Nike",
+          "price": 89.99,
+          "color": "Pink",
+          "size": ["6", "7", "8", "9"],
+          "image": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "rating": 4.6,
+          "reviews": 130,
+          "offer": false
+        },
+        {
+          "id": "017",
           "name": "Women's Boots",
           "brand": "Dr. Martens",
           "price": 149.99,
@@ -186,7 +227,7 @@ const Data = {
           "offer": false
         },
         {
-          "id": "015",
+          "id": "018",
           "name": "Women's Sandals",
           "brand": "Birkenstock",
           "price": 79.99,
@@ -200,7 +241,19 @@ const Data = {
           "offer_description": "Summer Sale"
         },
         {
-          "id": "016",
+          "id": "019",
+          "name": "Women's Running Shoes",
+          "brand": "Nike",
+          "price": 89.99,
+          "color": "Pink",
+          "size": ["6", "7", "8", "9"],
+          "image": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "rating": 4.6,
+          "reviews": 130,
+          "offer": false
+        },
+        {
+          "id": "020",
           "name": "Women's Flats",
           "brand": "Tory Burch",
           "price": 129.99,
@@ -212,7 +265,7 @@ const Data = {
           "offer": false
         },
         {
-          "id": "017",
+          "id": "021",
           "name": "Women's Wedges",
           "brand": "Michael Kors",
           "price": 159.99,
@@ -224,7 +277,7 @@ const Data = {
           "offer": false
         },
         {
-          "id": "018",
+          "id": "022",
           "name": "Women's Sneakers",
           "brand": "Reebok",
           "price": 69.99,
@@ -236,7 +289,7 @@ const Data = {
           "offer": false
         },
         {
-          "id": "019",
+          "id": "023",
           "name": "Women's Espadrilles",
           "brand": "Soludos",
           "price": 49.99,
@@ -248,7 +301,7 @@ const Data = {
           "offer": false
         },
         {
-          "id": "020",
+          "id": "024",
           "name": "Women's Flip Flops",
           "brand": "Havaianas",
           "price": 19.99,
@@ -267,13 +320,13 @@ const Data = {
       "category": "Children's",
       "products": [
         {
-          "id": "021",
+          "id": "025",
           "name": "Kids' Sneakers",
           "brand": "Puma",
           "price": 39.99,
           "color": "Blue",
           "size": ["10", "11", "12", "13"],
-          "image": "https://plus.unsplash.com/premium_photo-1682125177822-63c27a3830ea?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "image": "https://images.unsplash.com/photo-1503449377594-32dd9ac4467c?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "rating": 4.4,
           "reviews": 80,
           "offer": true,
@@ -281,37 +334,49 @@ const Data = {
           "offer_description": "Back to School Sale"
         },
         {
-          "id": "022",
+          "id": "026",
           "name": "Kids' Boots",
           "brand": "Timberland",
           "price": 59.99,
           "color": "Yellow",
           "size": ["8", "9", "10", "11"],
-          "image": "https://images.unsplash.com/photo-1531310197839-ccf54634509e?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "image": "https://images.unsplash.com/photo-1573309463328-ec43614b3def?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "rating": 4.6,
           "reviews": 100,
           "offer": false
         },
         {
-          "id": "023",
+          "id": "027",
+          "name": "Kids' Boots",
+          "brand": "Timberland",
+          "price": 59.99,
+          "color": "Yellow",
+          "size": ["8", "9", "10", "11"],
+          "image": "https://images.unsplash.com/photo-1514989940723-e8e51635b782?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "rating": 4.6,
+          "reviews": 100,
+          "offer": false
+        },
+        {
+          "id": "028",
           "name": "Kids' Sandals",
           "brand": "Crocs",
           "price": 29.99,
           "color": "Green",
           "size": ["8", "9", "10", "11"],
-          "image": "https://plus.unsplash.com/premium_photo-1711051513016-72baa1035293?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "image": "https://plus.unsplash.com/premium_photo-1684164601688-776f09b53353?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "rating": 4.2,
           "reviews": 70,
           "offer": false
         },
         {
-          "id": "024",
+          "id": "029",
           "name": "Kids' Flip Flops",
           "brand": "Ipanema",
           "price": 19.99,
           "color": "Pink",
           "size": ["8", "9", "10", "11"],
-          "image": "https://images.unsplash.com/photo-1499013819532-e4ff41b00669?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "image": "https://images.unsplash.com/photo-1535050040180-e159cb2637f5?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "rating": 4.0,
           "reviews": 60,
           "offer": true,
@@ -319,37 +384,49 @@ const Data = {
           "offer_description": "Summer Clearance"
         },
         {
-          "id": "025",
+          "id": "030",
+          "name": "Kids' Boots",
+          "brand": "Timberland",
+          "price": 59.99,
+          "color": "Yellow",
+          "size": ["8", "9", "10", "11"],
+          "image": "https://images.unsplash.com/photo-1512374382149-233c42b6a83b?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "rating": 4.6,
+          "reviews": 100,
+          "offer": false
+        },
+        {
+          "id": "031",
           "name": "Kids' Athletic Shoes",
           "brand": "Under Armour",
           "price": 49.99,
           "color": "Black",
           "size": ["8", "9", "10", "11"],
-          "image": "https://images.unsplash.com/photo-1610398752800-146f269dfcc8?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "image": "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "rating": 4.5,
           "reviews": 90,
           "offer": false
         },
         {
-          "id": "026",
+          "id": "032",
           "name": "Kids' Snow Boots",
           "brand": "Columbia",
           "price": 69.99,
           "color": "Blue",
           "size": ["8", "9", "10", "11"],
-          "image": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "image": "https://plus.unsplash.com/premium_photo-1669644856868-6613f6683346?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "rating": 4.7,
           "reviews": 110,
           "offer": false
         },
         {
-          "id": "027",
+          "id": "033",
           "name": "Kids' Water Shoes",
           "brand": "Speedo",
           "price": 24.99,
           "color": "Red",
           "size": ["8", "9", "10", "11"],
-          "image": "https://images.unsplash.com/photo-1512675828443-4f454c42253a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "image": "https://images.unsplash.com/photo-1604136172276-0f0a615e7fae?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "rating": 4.3,
           "reviews": 80,
           "offer": true,
@@ -357,25 +434,25 @@ const Data = {
           "offer_description": "Summer Sale"
         },
         {
-          "id": "028",
+          "id": "034",
           "name": "Kids' Dress Shoes",
           "brand": "Florsheim",
           "price": 79.99,
           "color": "Black",
           "size": ["8", "9", "10", "11"],
-          "image": "https://images.unsplash.com/photo-1596703263926-eb0762ee17e4?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "image": "https://images.unsplash.com/photo-1515349541556-ef8cc276e382?q=80&w=1933&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "rating": 4.8,
           "reviews": 130,
           "offer": false
         },
         {
-          "id": "029",
+          "id": "035",
           "name": "Kids' Slippers",
           "brand": "Acorn",
           "price": 34.99,
           "color": "Pink",
           "size": ["8", "9", "10", "11"],
-          "image": "https://images.unsplash.com/photo-1535043934128-cf0b28d52f95?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "image": "https://plus.unsplash.com/premium_photo-1685125885313-52ab335ad131?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "rating": 4.6,
           "reviews": 100,
           "offer": true,
@@ -383,13 +460,13 @@ const Data = {
           "offer_description": "Winter Sale"
         },
         {
-          "id": "030",
+          "id": "036",
           "name": "Kids' Clogs",
           "brand": "Crocs",
           "price": 29.99,
           "color": "Yellow",
           "size": ["8", "9", "10", "11"],
-          "image": "https://images.unsplash.com/photo-1562273138-f46be4ebdf33?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "image": "https://images.unsplash.com/photo-1517236703105-9ec38fec32a3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "rating": 4.4,
           "reviews": 90,
           "offer": false
